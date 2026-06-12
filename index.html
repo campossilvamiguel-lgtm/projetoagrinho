@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Agro Sustentável</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="game">
+      <h1 class="title">Agro Sustentável</h1>
+      <p class="subtitle">Escolha as melhores práticas para produzir com responsabilidade.</p>
+
+      <div class="status">
+        <span>Pontos: <strong id="score">0</strong></span>
+        <span>Fase: <strong id="level">1</strong></span>
+      </div>
+
+      <div class="life-box">
+        <div class="life-text">Vida da plantação</div>
+        <div class="life-bar">
+          <div id="lifeFill" class="life-fill"></div>
+        </div>
+        <span id="lifeValue" class="life-value">100%</span>
+      </div>
+
+      <div class="card">
+        <p id="question"></p>
+        <div id="options" class="options"></div>
+      </div>
+
+      <p id="feedback" class="feedback"></p>
+      <button id="nextBtn" class="next-btn" onclick="nextQuestion()" disabled>Próxima pergunta</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
